@@ -1,6 +1,8 @@
 // game functions
-
+var WebApp = window.Telegram.WebApp;
+    
 function tap(rid) {
+    WebApp.HapticFeedback.impactOccurred('light')
     var balance = Number(document.getElementById('balance').innerHTML);
     var elid = 'coin' + rid;
     var object = document.getElementById(elid)
