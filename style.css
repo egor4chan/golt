@@ -260,11 +260,12 @@ button#copy {
     width: 150px;
     height: 150px;
     top: -200px;
-    transition: 10s;
+    transition: 5s;
     left: 10px;
     opacity: 0.5;
     z-index: -1;
     opacity: 1;
+    cursor: pointer;
 }
 
 @keyframes drop {
@@ -276,4 +277,35 @@ button#copy {
         top: 100%;
         opacity: 0.5;
     }
+}
+
+@keyframes tap {
+    to {
+        opacity: 0;
+    }
+}
+
+.board {
+    text-align: left;
+    position: relative;
+    font-size: 40px;
+    opacity: 0.9;
+    
+}
+
+
+
+#coin2 {
+    position: relative;
+    height: 30px;
+    width: same-as-height;
+    right: 10px;
+    top: 0px;
+
+    animation: coin 2s infinite;
+    position: relative;
+}
+
+.cloud {
+    background-color: black;
 }
