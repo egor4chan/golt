@@ -7,6 +7,8 @@ function tap(rid) {
     var elid = 'coin' + rid;
     var object = document.getElementById(elid)
 
+        document.getElementById(elid).onclick = ''
+
     object.style.transition = '0.5s'
     object.style.top = '-100px'
     object.style.rotate = '100deg'
