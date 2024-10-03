@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="start.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,24 +16,13 @@
     <title>Inviting</title>
 </head>
 <body>
-    <h1 class='big balance board' id="center">
-        <a id="balance">305</a>
-        <img id='coin2' class="specialcoin" src="images/IMG_0933.PNG" alt="">
-    </h1>
-    
-    <nav>
-        <div onclick="location.href='game.html'">
-            <img src="images/IMG_0935.PNG" alt="">
-        </div>
-        <div onclick="location.href='frens.html'">
-            <img src="images/IMG_0935.PNG" alt="">
-        </div>
-        <div>
-            <img src="images/IMG_0936.PNG" alt="">
-        </div>
-    </nav>
-    
-    <script src="back.js"></script>
+    <h1 id="startMessage">Welcome!</h1>
+    <div id="load">
+        <div id="drug"></div>
+    </div>
+
+    <script src="start.js"></script>
     <script src="board.js"></script>
+    <script src="back.js"></script>
 </body> 
 </html>

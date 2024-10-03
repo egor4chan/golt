@@ -9,9 +9,11 @@ body {
 
 button {
     font-family: 'SilkScreen';
+    user-select: none;
 }
 
 button.down {
+    user-select: none;
     font-family: 'SilkScreen';
     font-weight: 500;
 
@@ -70,7 +72,7 @@ img#coin {
     width: same-as-height;
     right: 10px;
     top: 0px;
-
+    user-select: none;
     animation: coin 2s infinite;
 }
 
