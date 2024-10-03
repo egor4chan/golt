@@ -3,6 +3,7 @@
 <head>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,19 +22,21 @@
     </h1>
     
     <nav>
-        <div onclick="location.href='game.html'">
+        <div onclick="locate('game.html')">
             <img src="images/IMG_0935.PNG" alt="">
         </div>
-        <div onclick="location.href='frens.html'">
+        <div onclick="locate('frens.html')">
             <img src="images/IMG_0935.PNG" alt="">
         </div>
-        <div>
+        <div onclick="locate('board.html')">
             <img src="images/IMG_0936.PNG" alt="">
         </div>
     </nav>
-    
+
+    <script src="locaion.js"></script>
+    <script src="notstart.js"></script>
     <script src="back.js"></script>
     <script src="board.js"></script>
-    <script src="notstart.js"></script>
+   
 </body> 
 </html>
