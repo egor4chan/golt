@@ -18,7 +18,7 @@ function spawn() {
 
         const randomID = getRandomArbitrary(100000, 999999)
         coin.setAttribute('id', `coin${randomID}`)
-        var func = 'tap('+randomID+')' // передаем айди через надатие в функцию
+        var func = 'tap('+randomID+', 50)' // передаем айди через надатие в функцию
         coin.setAttribute('onclick', func)
 
         setTimeout(() => {
@@ -38,7 +38,7 @@ function spawn() {
 
         const randomID = getRandomArbitrary(100000, 999999)
         coin.setAttribute('id', `coin${randomID}`)
-        var func = 'tap('+randomID+')' // передаем айди через надатие в функцию
+        var func = 'tap('+randomID+', 5)' // передаем айди через надатие в функцию
         coin.setAttribute('onclick', func)
 
         setTimeout(() => {
@@ -58,7 +58,7 @@ function spawn() {
 
         const randomID = getRandomArbitrary(100000, 999999)
         coin.setAttribute('id', `coin${randomID}`)
-        var func = 'tap('+randomID+')' // передаем айди через надатие в функцию
+        var func = 'tap('+randomID+', 1)' // передаем айди через надатие в функцию
         coin.setAttribute('onclick', func)
 
         setTimeout(() => {
@@ -69,5 +69,5 @@ function spawn() {
 
 }
 
-setInterval(spawn, 666)
+setInterval(spawn, 466)
 
