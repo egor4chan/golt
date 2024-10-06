@@ -272,6 +272,8 @@ button#copy {
     opacity: 1;
     cursor: pointer;
     padding: 10px;
+    padding-top: 30px;
+
     border-radius: 30%;
 }
 
@@ -282,7 +284,7 @@ button#copy {
 
     to {
         top: 100%;
-        opacity: 0.5;
+        opacity: 1.5;
     }
 }
 
