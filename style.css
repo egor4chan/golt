@@ -262,10 +262,10 @@ button#copy {
 .bcoin {
     touch-action: manipulation;
     position: fixed;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     top: -200px;
-    transition: 5s;
+    transition: 0s;
     left: 10px;
     opacity: 0.5;
     z-index: -1;
