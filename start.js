@@ -7,5 +7,5 @@ WebApp.bottomBarColor = '#1e1e24'
 
 setTimeout(()=>{
     WebApp.HapticFeedback.impactOccurred('light')
-    location.href = 'game.html'
+    location.href = 'board.html'
 }, 3500)

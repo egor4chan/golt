@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="start.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Inviting</title>
+</head>
+<body>
+    <center>
+        <h1 class='big balance' id="center">
+            0
+            <img id='coin' src="images/IMG_0933.PNG" alt="">
+        </h1>
+        
+    </center>
+    <h4 id="center">Update your tap and earn more coins <br>per one tap.
+    </h4>
+
+
+    <div class="shoptasks">
+        <div id="goldtask" onclick="shake(1)">
+            <img src="images/IMG_0933.PNG" alt="">
+            <p>Gold (+1)</p>
+            <p class="award">Next: +2
+                <img id='coin' class="little" src="images/IMG_0933.PNG">
+                <a>300
+                    <img id='coin' class="little" src="images/IMG_0933.PNG">
+                </a>
+            </p>
+        </div>
+        <div id='plattask' onclick="shake(2)">
+            <img src="images/silver.PNG" alt="">
+            <p>Platinum (+5)</p>
+            <p class="award">next: +10
+                <img id='coin' class="little" src="images/IMG_0933.PNG">
+                <a>500
+                    <img id='coin' class="little" src="images/IMG_0933.PNG">
+                </a>
+            </p>
+            
+        </div>
+        <div id='donuttask' onclick="shake(3)">
+            <img src="images/donut.PNG" alt="">
+            <p>donut (+50)</p>
+            <p class="award">next: +100
+                <img id='coin' class="little" src="images/IMG_0933.PNG">
+                <a>1000
+                    <img id='coin' class="little" src="images/IMG_0933.PNG">
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+    <footer></footer>
+
+    <nav>
+        <div onclick="locate('board.html')">
+            <img src="images/IMG_0935.PNG" alt="">
+            
+        </div>
+        <div onclick="locate('shop.html')">
+            <img src="images/IMG_0936.PNG" alt="">
+        </div>
+        <div onclick="locate('frens.html')">
+            <img src="images/IMG_0935.PNG" alt="">
+        </div>
+    </nav>
+
+    <script src="shop.js"></script>
+    <script src="locaion.js"></script>
+    <script src="back.js"></script>
+    <script src="notstart.js"></script>
+</body>
+</html>

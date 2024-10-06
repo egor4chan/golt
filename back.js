@@ -23,7 +23,7 @@ function spawn() {
 
         setTimeout(() => {
             coin.style.left = `${getRandomArbitrary(-10, 80)}%`;
-            coin.style.rotate = `${getRandomArbitrary(-110, 110)}deg`;
+            coin.style.rotate = `${getRandomArbitrary(30, 30)}deg`;
         }, 100)
     }
 
@@ -43,7 +43,7 @@ function spawn() {
 
         setTimeout(() => {
             coin.style.left = `${getRandomArbitrary(-10, 80)}%`;
-            coin.style.rotate = `${getRandomArbitrary(-110, 110)}deg`;
+            coin.style.rotate = `${getRandomArbitrary(30, 30)}deg`;
         }, 100)
     }
 
@@ -63,7 +63,7 @@ function spawn() {
 
         setTimeout(() => {
             coin.style.left = `${getRandomArbitrary(-10, 80)}%`;
-            coin.style.rotate = `${getRandomArbitrary(-110, 110)}deg`;
+            coin.style.rotate = `${getRandomArbitrary(30, 30)}deg`;
         }, 100)
     }
 
