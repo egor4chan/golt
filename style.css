@@ -262,8 +262,8 @@ button#copy {
 .bcoin {
     touch-action: manipulation;
     position: fixed;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     top: -200px;
     transition: 5s;
     left: 10px;
@@ -273,7 +273,6 @@ button#copy {
     cursor: pointer;
     padding: 40px;
     padding-bottom: 10px;
-    background-color: aliceblue;
     border-radius: 30%;
 }
 
