@@ -265,15 +265,12 @@ button#copy {
     width: 100px;
     height: 100px;
     top: -200px;
-    transition: 0s;
+    transition: 5s;
     left: 10px;
     opacity: 0.5;
     z-index: -1;
     opacity: 1;
     cursor: pointer;
-    padding: 40px;
-    padding-bottom: 10px;
-    border-radius: 30%;
 }
 
 @keyframes drop {
@@ -283,7 +280,7 @@ button#copy {
 
     to {
         top: 100%;
-        opacity: 1.5;
+        opacity: 0.5;
     }
 }
 
