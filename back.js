@@ -11,7 +11,7 @@ function spawn() {
         coin = document.createElement('img')
         coin.setAttribute('src', 'images/donut.PNG')
         coin.setAttribute('class', 'bcoin')
-        coin.style = `animation: drop 4s forwards; left: ${getRandomArbitrary(-10, 100)}%`;
+        coin.style = `animation: drop 3s forwards; left: ${getRandomArbitrary(-10, 100)}%`;
         document.body.appendChild(coin)
 
     
@@ -31,7 +31,7 @@ function spawn() {
         coin = document.createElement('img')
         coin.setAttribute('src', 'images/silver.PNG')
         coin.setAttribute('class', 'bcoin')
-        coin.style = `animation: drop 4s forwards; left: ${getRandomArbitrary(-10, 100)}%`;
+        coin.style = `animation: drop 5s forwards; left: ${getRandomArbitrary(-10, 100)}%`;
         document.body.appendChild(coin)
 
     
@@ -51,7 +51,7 @@ function spawn() {
         coin = document.createElement('img')
         coin.setAttribute('src', 'images/IMG_0933.PNG')
         coin.setAttribute('class', 'bcoin')
-        coin.style = `animation: drop 4s forwards; left: ${getRandomArbitrary(-10, 100)}%`;
+        coin.style = `animation: drop 5s forwards; left: ${getRandomArbitrary(-10, 100)}%`;
         document.body.appendChild(coin)
 
     
