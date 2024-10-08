@@ -1,3 +1,10 @@
+var balanceOnShop = Number(document.getElementById('balance').innerHTML)
+var goldCost = Number(document.getElementById('goldCost').innerHTML);
+
+if (balanceOnShop >= goldCost) {
+    document.getElementById('goldCost').style.color = 'white'
+}
+
 
 function shake(pos) {
     if (pos == 1) 
@@ -12,3 +19,4 @@ function shake(pos) {
         goldTask.style.animation = ''
     }, 300)
 }
+
