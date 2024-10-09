@@ -7,14 +7,23 @@ function tap(rid, rarity) {
     var elid = 'coin' + rid;
     var object = document.getElementById(elid)
 
+    var newBalance = Number(window.localStorage.getItem('balance'))
+    
+
     document.getElementById(elid).onclick = ''
 
-    if (rarity == 1) 
+    if (rarity == 1) {
         var coinsPerTap = 1
-    if (rarity == 2)
+        window.localStorage.setItem('balance', newBalance + 1) 
+    }
+    if (rarity == 2) {
         var coinsPerTap = 5
-    if (rarity == 3)
+        window.localStorage.setItem('balance', newBalance + 5)
+    }
+    if (rarity == 3) {
         var coinsPerTap = 50
+        window.localStorage.setItem('balance', newBalance + 50)
+    }
 
     object.style.transition = '0.5s'
     object.style.top = '-100px'

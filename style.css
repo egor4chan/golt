@@ -7,6 +7,8 @@ body {
     overflow-x: hidden;
 
     touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 button {
@@ -62,6 +64,11 @@ h4 {
     text-align: center;
     left: 0;
     width: 100%;
+    transition: 0.5s;
+}
+
+#positions {
+    transition: 0.5s;
 }
 
 .big {
@@ -76,6 +83,8 @@ img#coin {
     top: 0px;
     user-select: none;
     animation: coin 2s infinite;
+    user-select: none;
+    touch-action: manipulation;
 }
 
 @keyframes coin {
@@ -317,7 +326,12 @@ button#copy {
     
 }
 
-
+#coinlittle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+}
 
 #coin2 {
     position: relative;
@@ -380,7 +394,7 @@ div.shoptasks > div > p.award {
     top: -16px;
 }
 
-p.award > a {
+p.award > a  {
     position: absolute;
     right: 20px;
     top: -20px;
@@ -389,6 +403,7 @@ p.award > a {
     border-radius: 4px;
     color: red;
 }
+
 
 @keyframes shake {
     from {
@@ -412,4 +427,41 @@ p.award > a {
     to {
         transform: rotate(100deg);
     }
+}
+
+
+div#cloud {
+    position: fixed;
+    width: 80%;
+    height: 400px;
+
+    left: 10%;
+    top: 100px;
+    background-color: aliceblue;
+    background: linear-gradient(45deg, rgb(30, 30, 36), rgb(47, 47, 56));
+    border-bottom: 4px solid rgb(62, 62, 75);
+
+
+    transition: 1s;
+    border-radius: 10px;
+}
+
+button#buyPosition {
+    width: 90%;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 5%;
+    bottom: 20px;
+
+    background: linear-gradient(45deg, rgb(255, 208, 0), rgb(255, 174, 0));
+    border-bottom: 4px solid rgb(255, 174, 0);
+
+    color: white;
+    cursor: pointer;
+
+    font-size: 18px;
 }

@@ -27,7 +27,7 @@
     </h4>
 
 
-    <div class="shoptasks">
+    <div class="shoptasks" id="positions">
         <div id="goldtask" onclick="shake(1)">
             <img src="images/IMG_0933.PNG" alt="">
             <p>Gold (+1)</p>
@@ -44,7 +44,8 @@
             <p>Platinum (+5)</p>
             <p class="award">next: +10
                 <img id='coin' class="little" src="images/IMG_0933.PNG">
-                <a>500
+                <a id="platCost">
+                    500
                     <img id='coin' class="little" src="images/IMG_0933.PNG">
                 </a>
             </p>
@@ -55,7 +56,8 @@
             <p>donut (+50)</p>
             <p class="award">next: +100
                 <img id='coin' class="little" src="images/IMG_0933.PNG">
-                <a>1000
+                <a id="donutCost">
+                    1000
                     <img id='coin' class="little" src="images/IMG_0933.PNG">
                 </a>
             </p>
@@ -78,6 +80,7 @@
         </div>
     </nav>
 
+    <script src="localstorage.js"></script>
     <script src="shop.js"></script>
     <script src="locaion.js"></script>
     <script src="back.js"></script>
