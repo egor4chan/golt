@@ -1,6 +1,10 @@
 var balance = window.localStorage.getItem('balance');
 
+// debug 
+window.localStorage.setItem('balance', 1100)
+
 if (balance != null) {
+    var balance = window.localStorage.getItem('balance');
     document.getElementById('balance').innerHTML = balance;
 }
 else {

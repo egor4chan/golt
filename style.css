@@ -465,3 +465,33 @@ button#buyPosition {
 
     font-size: 18px;
 }
+
+#notify {
+    width: calc(60% - 40px);
+    
+    left: 20%;
+    position: fixed;
+    top: -100px;
+    background-color: rgb(136, 223, 5);
+    border-bottom: 3px solid rgb(100, 164, 5);;
+    border-radius: 10px;
+    color: white;
+    padding: 0px 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+@keyframes notify {
+    from {
+        top: -120px
+    }
+    20% {
+        top: 20px;
+    }
+    80% {
+        top: 20px;
+    }
+    to {
+        top: -120px;
+    }
+}
