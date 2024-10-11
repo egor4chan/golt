@@ -9,6 +9,8 @@ function updateBalanceLocalStorage(minus) {
 }
 
 function update(position) {
+    var WebApp = window.Telegram.WebApp;
+    WebApp.HapticFeedback.notificationOccurred('success')
     if (position == 1) {
         updateBalanceLocalStorage(300)
         document.getElementById('notify').style = 'animation: notify 3s ease forwards'
