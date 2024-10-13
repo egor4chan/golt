@@ -1,5 +1,10 @@
 // game functions
 
+// получение уровней
+var goldLVL = Number(document.getElementById('gold').innerHTML)
+var platLVL = Number(document.getElementById('plat').innerHTML)
+var donutLVL = Number(document.getElementById('donut').innerHTML)
+
 function tap(rid, rarity) {
     var WebApp = window.Telegram.WebApp;
     WebApp.HapticFeedback.impactOccurred('light')
@@ -8,21 +13,19 @@ function tap(rid, rarity) {
     var object = document.getElementById(elid)
 
     var newBalance = Number(window.localStorage.getItem('balance'))
-    
-
     document.getElementById(elid).onclick = ''
 
     if (rarity == 1) {
-        var coinsPerTap = 1
-        window.localStorage.setItem('balance', newBalance + 1) 
+        var coinsPerTap = 1 * goldLVL
+        window.localStorage.setItem('balance', newBalance + 1 * Number(window.localStorage.getItem('gold'))) 
     }
     if (rarity == 2) {
-        var coinsPerTap = 5
-        window.localStorage.setItem('balance', newBalance + 5)
+        var coinsPerTap = 5 * platLVL
+        window.localStorage.setItem('balance', newBalance + 5 * Number(window.localStorage.getItem('plat')))
     }
     if (rarity == 3) {
-        var coinsPerTap = 50
-        window.localStorage.setItem('balance', newBalance + 50)
+        var coinsPerTap = 50 * donutLVL
+        window.localStorage.setItem('balance', newBalance + 50 * Number(window.localStorage.getItem('donut')))
     }
 
     object.style.transition = '0.5s'

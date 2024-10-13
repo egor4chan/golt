@@ -26,15 +26,17 @@
         </h1>
         
     </center>
-    <h4 id="center">Update your tap and earn more coins <br>per one tap.
+    <h4 id="center">Update your tap and earn more <br> coins per one tap.
     </h4>
 
 
     <div class="shoptasks" id="positions">
         <div id="goldtask" onclick="shake(1)">
             <img src="images/IMG_0933.PNG" alt="">
-            <p>Gold (+1)</p>
-            <p class="award">Next: +2
+            <p>Gold </p>
+            <p class="award">
+                <span id="gold">1</span> LVL -
+                <span id="goldEarn">1</span>
                 <img id='coin' class="little" src="images/IMG_0933.PNG">
                 <a id="goldCost">
                     300
@@ -44,8 +46,10 @@
         </div>
         <div id='plattask' onclick="shake(2)">
             <img src="images/silver.PNG" alt="">
-            <p>Platinum (+5)</p>
-            <p class="award">next: +10
+            <p>Platinum</p>
+            <p class="award">
+                <span id="plat">1</span> LVL - 
+                <span id="platEarn">5</span>
                 <img id='coin' class="little" src="images/IMG_0933.PNG">
                 <a id="platCost">
                     500
@@ -56,8 +60,10 @@
         </div>
         <div id='donuttask' onclick="shake(3)">
             <img src="images/donut.PNG" alt="">
-            <p>donut (+50)</p>
-            <p class="award">next: +100
+            <p>donut</p>
+            <p class="award">
+                <span id="donut">1</span> lvl - 
+                <span id="donutEarn">50</span>
                 <img id='coin' class="little" src="images/IMG_0933.PNG">
                 <a id="donutCost">
                     1000

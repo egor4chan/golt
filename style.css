@@ -392,6 +392,8 @@ div.shoptasks > div > p {
 
 div.shoptasks > div > p.award {
     top: -16px;
+    color: rgb(226, 225, 225);
+    font-size: 14px;
 }
 
 p.award > a  {
@@ -479,6 +481,12 @@ button#buyPosition {
     padding: 0px 20px;
     font-size: 10px;
     text-align: center;
+}
+
+div.levels {
+    color: rgb(110, 110, 110);
+    position: fixed;
+    left: 5%
 }
 
 @keyframes notify {
