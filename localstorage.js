@@ -1,5 +1,5 @@
 var balance = window.localStorage.getItem('balance');
-
+var level = window.localStorage.getItem('donut');
 // debug 
 //window.localStorage.setItem('balance', 1100)
 
@@ -23,7 +23,10 @@ else {
     window.localStorage.setItem('balance', 0);
 
     // начисляем первый уровень всем позициям 
-    window.localStorage.setItem('gold', 1);
-    window.localStorage.setItem('plat', 1);
-    window.localStorage.setItem('donut', 1);
+}
+
+if (level == null) {
+    window.localStorage.setItem('gold', 1)
+    window.localStorage.setItem('plat', 1)
+    window.localStorage.setItem('donut', 1)
 }
