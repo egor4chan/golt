@@ -13,11 +13,11 @@ function spawn() {
         create_coin(3, randomID)
     }
 
-    if (coinRarity < 11 && coinRarity > 3) {
+    if (coinRarity < 21 && coinRarity > 3) {
         create_coin(2, randomID)
     }
 
-    if (coinRarity >= 11) {
+    if (coinRarity >= 21) {
         create_coin(1, randomID)
     }
 

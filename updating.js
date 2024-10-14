@@ -15,6 +15,7 @@ function upgradeLevel(rarity) {
         window.localStorage.setItem('gold', res);
         document.getElementById('gold').innerHTML = res;
         document.getElementById('goldEarn').innerHTML = res * 1;
+        document.getElementById('GoldPrice').innerHTML = GoldPrice[window.localStorage.getItem('gold')]
     }
     // PLATINUM COIN
     if (rarity == 2) { 
@@ -22,6 +23,8 @@ function upgradeLevel(rarity) {
         window.localStorage.setItem('plat', res);
         document.getElementById('plat').innerHTML = res;
         document.getElementById('platEarn').innerHTML = res * 5;
+        document.getElementById('PlatPrice').innerHTML = PlatPrice[window.localStorage.getItem('plat')]
+
     }
     // DONUT COIN
     if (rarity == 3) { 
@@ -29,6 +32,7 @@ function upgradeLevel(rarity) {
         window.localStorage.setItem('donut', res);
         document.getElementById('donut').innerHTML = res;
         document.getElementById('donutEarn').innerHTML = res * 50;
+        document.getElementById('DonutPrice').innerHTML = DonutPrice[window.localStorage.getItem('donut')]
     }
 }
 
@@ -37,21 +41,21 @@ function update(position) {
     WebApp.HapticFeedback.notificationOccurred('success')
 
     if (position == 1) {
-        updateBalanceLocalStorage(300) // списать деньги
+        updateBalanceLocalStorage(GoldPrice[window.localStorage.getItem('gold')]) // списать деньги
         upgradeLevel(1) // улучшить
         document.getElementById('notify').style = 'animation: notify 3s ease forwards'
         setTimeout(()=>{ document.getElementById('notify').style = 'animation: none;'}, 3000)
     }
 
     if (position == 2) {
-        updateBalanceLocalStorage(500)
+        updateBalanceLocalStorage(PlatPrice[window.localStorage.getItem('plat')])
         upgradeLevel(2)
         document.getElementById('notify').style = 'animation: notify 3s ease forwards'
         setTimeout(()=>{ document.getElementById('notify').style = 'animation: none;'}, 3000)
     }
 
     if (position == 3) {
-        updateBalanceLocalStorage(1000)
+        updateBalanceLocalStorage(DonutPrice[window.localStorage.getItem('donut')])
         upgradeLevel(3)
         document.getElementById('notify').style = 'animation: notify 3s ease forwards'
         setTimeout(()=>{ document.getElementById('notify').style = 'animation: none;'}, 3000)
