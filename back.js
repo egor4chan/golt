@@ -6,7 +6,7 @@ var coin
 var randomID
 
 function spawn() {
-    var coinRarity = Number(getRandomArbitrary(1, 100)).toFixed(0);
+    var coinRarity = Number(getRandomArbitrary(1, 101)).toFixed(0);
     var randomID = getRandomArbitrary(100000, 999999)
 
     if (coinRarity < 3 ) {
@@ -17,10 +17,12 @@ function spawn() {
         create_coin(2, randomID)
     }
 
-    if (coinRarity >= 21) {
+    if (coinRarity >= 21 && coinRarity != 101) {
         create_coin(1, randomID)
     }
-
+    if (coinRarity == 101) {
+        create_coin(4, randomID)
+    }
 
 }
 
@@ -29,15 +31,22 @@ setInterval(spawn, 466)
 function create_coin(rarity, id) {
     coin = document.createElement('img')
 
-    if (rarity == 1) 
+    if (rarity == 1) {
         coin.setAttribute('src', 'images/IMG_0933.PNG')
         var func = `tap(${id}, ${rarity})`
-    if (rarity == 2)
+    }
+    if (rarity == 2) {
         coin.setAttribute('src', 'images/silver.PNG')
         var func = `tap(${id}, ${rarity})`
-    if (rarity == 3) 
+    }
+    if (rarity == 3) {
         coin.setAttribute('src', 'images/donut.PNG')
         var func = `tap(${id}, ${rarity})`
+    }
+    if (rarity == 4) {
+        coin.setAttribute('src', 'images/ton.PNG')
+        var func = `openTON()`
+    }
 
     coin.setAttribute('class', 'bcoin')
 

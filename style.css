@@ -504,3 +504,42 @@ div.levels {
         top: -120px;
     }
 }
+
+div#ton {
+    width: 80%;
+    height: 300px;
+    left: 10%;
+    top: -55%; /* 25% */
+    position: fixed;
+    background-color: rgb(15, 134, 213);
+    border-bottom: 3px solid rgb(9, 95, 153);
+    z-index: 15;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+div#ton > button {
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    height: 50px;
+    bottom: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: rgb(15, 134, 213);
+    border-bottom: 3px solid rgb(190, 189, 189);
+}
+
+div#ton > h3 {
+    color: white;
+    position: absolute;
+    left: 15px;
+}
+
+div#ton > h5 {
+    color: white;
+    left: 15px;
+    position: absolute;
+    top: 100px;
+}

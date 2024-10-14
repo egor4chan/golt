@@ -39,3 +39,17 @@ function tap(rid, rarity) {
     document.getElementById('balance').innerHTML = balance + Number(coinsPerTap)
 
 }
+
+function openTON() {
+    // при нажатии на падающий TON
+    var tonCloud = document.getElementById('ton');
+    
+    tonCloud.style.top = '25%';
+}
+
+
+function hide() {
+    var tonCloud = document.getElementById('ton');
+    
+    tonCloud.style.top = '-55%';
+}
