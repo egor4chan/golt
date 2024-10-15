@@ -12,8 +12,8 @@ div#leaders {
 }
 
 div.circle {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 40px;
     background-color: aliceblue;
     background-color: rgb(30, 30, 36);
@@ -27,33 +27,71 @@ div.circle {
 }
 
 span {
-    opacity: 0.9;
+    opacity: 1;
 }
 
+
+span.earned {
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 20px;
+    top: 16px;
+
+}
+
+span.earned > img {
+    height: 20px;
+    width: same-as-height;
+    position: relative;
+    top: 5px;
+}
+
+span.earnedTON {
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 20px;
+    bottom: 18px;
+
+}
+
+span.earnedTON > img {
+    height: 20px;
+    width: same-as-height;
+    position: relative;
+    top: 5px;
+}
+
+
+
 div#firstPlace {
-    height: 130px;
-    width: 130px;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
     font-size: 50px;
     border: 1px solid rgb(249, 204, 3);
+    background: linear-gradient(45deg, rgb(249, 204, 3), rgb(249, 167, 3));
 }
 
 div#secondPlace {
     position: absolute;
     left: 10px;
     border: 1px solid rgb(175, 175, 175);
+    background: linear-gradient(45deg, rgb(175, 175, 175), rgb(133, 132, 132));
 }
 
 div#thirdPlace {
     position: absolute;
     right: 10px;
     border: 1px solid rgb(207, 132, 3);
+    background: linear-gradient(45deg, rgb(207, 132, 3), rgb(149, 96, 3));
 }
 
 
 span#number1 {
     position: absolute;
-    bottom: -0px;
+    bottom: 10px;
     color: white;
     font-size: 18px;
     padding: 3px 8px;
@@ -105,12 +143,19 @@ div#otherLeaders > div {
 }
 
 span.number {
-    position: absolute;
+    position: relative;
     left: 10px;
-    top: 5px;
+    top: 18px;
     padding: 8px 5px;
     color: silver;
 
+}
+
+span.username {
+    color: silver;
+    position: relative;
+    top: 18px;
+    left: 10px
 }
 
 div#selfLeader {
@@ -131,7 +176,7 @@ div#selfLeader {
 
 footer {
     width: 100%;
-    height: 400px;
+    height: 200px;
     position: relative;
     top: 1100px
 }
