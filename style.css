@@ -4,7 +4,6 @@ body {
     background-color: rgb(30, 30, 36);
 
     font-family: 'SilkScreen';
-    overflow-x: hidden;
 
     touch-action: none;
     user-select: none;
