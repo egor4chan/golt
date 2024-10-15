@@ -55,13 +55,14 @@ function create_coin(rarity, id) {
         var func = `openTON()`
     }
 
+    
     coin.setAttribute('class', 'bcoin')
 
     if (id % 2 == 0) {
-        coin.style = `animation: drop 4s forwards; left: ${getRandomArbitrary(-10, 100)}%`;
+        coin.style = `animation: drop 4s forwards; left: ${getRandomArbitrary(-10, 70)}%`;
     }
     else {
-        coin.style = `animation: drop_second 4s forwards; left: ${getRandomArbitrary(-10, 100)}%`;
+        coin.style = `animation: drop_second 4s forwards; left: ${getRandomArbitrary(-10, 70)}%`;
     }
         
     document.body.appendChild(coin)
@@ -85,7 +86,7 @@ function create_coin(rarity, id) {
 function add_clicker_effect(x, y, count) {
     let el = document.createElement("h6");
     el.setAttribute('id', 'counter')
-    el.innerHTML = '+', count;
+    el.innerHTML = '?', count;
     el.style.position = 'absolute';
     el.style.userSelect = 'none';
     el.style.webkitUserSelect = 'none';
@@ -94,7 +95,7 @@ function add_clicker_effect(x, y, count) {
     el.style.left = `${x}px`
     document.body.appendChild(el)
     el.onclick = click;
-    setTimeout(function() {
+    setTimeout(() => {
         el.remove();
     }, 200)
 }

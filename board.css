@@ -1,0 +1,26 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+img {
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    -ms-touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+div#tasks {
+    position: absolute;
+    bottom: 100px;
+    left: 10%;
+    color: white;
+    padding: 3px 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
