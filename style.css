@@ -6,7 +6,7 @@ body {
     font-family: 'SilkScreen';
     overflow-x: hidden;
 
-    touch-action: manipulation;
+    touch-action: none;
     user-select: none;
     -webkit-user-select: none;
 
@@ -271,7 +271,7 @@ button#copy {
 }
 
 .bcoin {
-    touch-action:none;
+    touch-action:manipulation;
     user-select: none;
     position: fixed;
     width: 100px;
