@@ -584,3 +584,21 @@ div#levelBoard {
         top: 100px;
     }
 }
+
+.shopcoin {
+    animation: shopcoin 2s infinite;
+}
+
+@keyframes shopcoin {
+    from {
+        scale: 1;
+    }
+    50% {
+        scale: 1.05;
+        rotate: 3deg
+    }
+    to {
+        scale: 1;
+        rotate: 0deg;
+    }
+}
