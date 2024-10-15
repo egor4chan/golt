@@ -12,6 +12,8 @@ function tap(rid, rarity) {
     var elid = 'coin' + rid;
     var object = document.getElementById(elid)
 
+    
+
     var newBalance = Number(window.localStorage.getItem('balance'))
     document.getElementById(elid).onclick = ''
 
@@ -33,7 +35,7 @@ function tap(rid, rarity) {
     
     object.style.scale = '1.3'
 
-    setTimeout(()=> {object.style.scale = '0' }, 100)
+    setTimeout(()=> {object.style.scale = '0'; object.removeEventListener('click', counter);}, 100)
     
     
     document.getElementById('balance').innerHTML = balance + Number(coinsPerTap)

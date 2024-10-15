@@ -5,6 +5,13 @@ function getRandomArbitrary(min, max) {
 var coin
 var randomID
 
+function counter(event)  {
+        // добавляем обработчик события "mousemove"
+        const x = event.clientX; // получаем координату X мыши
+        const y = event.clientY; // получаем координату Y мыши
+        add_clicker_effect(x, y)
+}
+
 function spawn() {
     var coinRarity = Number(getRandomArbitrary(1, 101)).toFixed(0);
     var randomID = getRandomArbitrary(100000, 999999)
@@ -64,9 +71,30 @@ function create_coin(rarity, id) {
      // передаем айди через надатие в функцию
     coin.setAttribute('onclick', func)
 
+    coin.addEventListener('click', counter)
+
+
     setTimeout(()=>{
         document.getElementById(`coin${id}`).remove()
     }, 4000)
 
 
+}
+
+
+function add_clicker_effect(x, y, count) {
+    let el = document.createElement("h6");
+    el.setAttribute('id', 'counter')
+    el.innerHTML = '+', count;
+    el.style.position = 'absolute';
+    el.style.userSelect = 'none';
+    el.style.webkitUserSelect = 'none';
+    
+    el.style.top = `${y}px`
+    el.style.left = `${x}px`
+    document.body.appendChild(el)
+    el.onclick = click;
+    setTimeout(function() {
+        el.remove();
+    }, 200)
 }
