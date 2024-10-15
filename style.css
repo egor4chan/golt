@@ -9,6 +9,8 @@ body {
     touch-action: manipulation;
     user-select: none;
     -webkit-user-select: none;
+
+
 }
 
 button {
@@ -269,7 +271,8 @@ button#copy {
 }
 
 .bcoin {
-    touch-action: manipulation;
+    touch-action:none;
+    user-select: none;
     position: fixed;
     width: 100px;
     height: 100px;
