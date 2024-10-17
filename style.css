@@ -552,7 +552,7 @@ div#levelBoard {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 1%;
+    width: 0%;
     height: 2px;
     background-color: rgb(255, 179, 0);
 
@@ -569,6 +569,9 @@ div#levelBoard {
     top: 0px;
 }
 
+#scaleLVL {
+    opacity: 0;
+}
 @keyframes counter {
     from {
         opacity: 0;

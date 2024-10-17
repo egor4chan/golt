@@ -4,8 +4,16 @@ function updateBalanceLocalStorage(minus) {
     var result = Number(window.localStorage.getItem('balance')) - Number(minus);
     window.localStorage.setItem('balance', result)
 
-    document.getElementById('balance').innerHTML = Number(document.getElementById('balance').innerHTML) - Number(minus)
+    document.getElementById('balance').innerHTML = window.localStorage.getItem('balance')
     checkCosts()
+}
+
+function plusBalance(plus) {
+    var result = Number(window.localStorage.getItem('balance')) + Number(plus);
+    window.localStorage.setItem('balance', result)
+
+    document.getElementById('balance').innerHTML = window.localStorage.getItem('balance')
+
 }
 
 function upgradeLevel(rarity) {
