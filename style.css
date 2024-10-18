@@ -177,14 +177,14 @@ nav {
 
 nav > div {
     border-top: 2px solid rgb(36, 39, 42);
-    width: 24.4%;
+    width: 19.7%;
     text-align: center;
 }
 
 nav > div > img {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     margin-top: 25px;
 }
 
@@ -606,3 +606,6 @@ div#levelBoard {
     }
 }
 
+div#first {
+    background-color: rgb(36, 44, 52);
+}

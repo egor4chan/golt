@@ -176,7 +176,11 @@ div#selfLeader {
 
 footer {
     width: 100%;
-    height: 200px;
+    height: 500px;
     position: relative;
     top: 1100px
+}
+
+div#first {
+    background-color: aliceblue;
 }
