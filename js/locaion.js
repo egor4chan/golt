@@ -5,3 +5,5 @@ function locate(src) {
 
     location.href = src;
 }
+
+

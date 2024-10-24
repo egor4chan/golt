@@ -47,7 +47,7 @@ function upgradeLevel(rarity) {
 function update(position) {
     var WebApp = window.Telegram.WebApp;
     WebApp.HapticFeedback.notificationOccurred('success')
-
+    checkCosts()
     if (position == 1) {
         updateBalanceLocalStorage(GoldPrice[window.localStorage.getItem('gold')]) // списать деньги
         upgradeLevel(1) // улучшить

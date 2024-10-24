@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="board.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +17,7 @@
     <title>Inviting</title>
 </head>
 <body style="overflow-y: hidden;">
+    <div id="boardhtml">
     <div id="levelBoard">
         
     </div>
@@ -43,6 +45,21 @@
         <a id="balance">0</a>
         <img id='coin2' class="specialcoin" src="images/IMG_0933.PNG" alt="">
     </h1>
+
+    </div>
+
+    <div id="frenshtml" style="opacity: 0; z-index: -100;">
+        <h1 class='big' id="center">0</h1>
+    <h4 id="center">You dont have a frens :(</h4>
+    <h4 id="center" style="margin-top: -14px;">But you can always invite them...</h4>
+
+
+    <div class="invite">
+        <button id="invite">+ invite</button>
+        <button id="copy" onclick="resetLocalStorage()">+</button>
+    </div>
+
+    </div>
     
 
     <nav>
@@ -63,12 +80,15 @@
         </div>
     </nav>
 
+    <script src="nav.js"></script>
+    <script src="js/tasks.js"></script>
     <script src="js/localstorage.js"></script>
     <script src="js/updating.js"></script>
     <script src="js/locaion.js"></script>
     <script src="js/notstart.js"></script>
     <script src="js/back.js"></script>
-    <script src="js/board.js"></script>
+    <script src="js/board.js" id="boardscript"></script>
    <script src="js/Level.js"></script>
+   
 </body> 
 </html>

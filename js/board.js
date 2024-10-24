@@ -27,6 +27,7 @@ function tap(rid, rarity) {
     }
     if (rarity == 3) {
         var coinsPerTap = 50 * donutLVL
+        window.localStorage.setItem('donutTotalClaimed', Number(window.localStorage.getItem('donutTotalClaimed')) + 1)
         window.localStorage.setItem('balance', newBalance + 50 * Number(window.localStorage.getItem('donut')))
     }
 

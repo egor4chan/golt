@@ -609,3 +609,17 @@ div#levelBoard {
 div#first {
     background-color: rgb(36, 44, 52);
 }
+
+@keyframes breef {
+    from {
+        border-bottom: 4px solid rgb(62, 62, 75);
+        scale: 1
+    }
+    50% {
+        border-bottom: 4px solid rgb(255, 179, 0);
+        scale: 1.01;
+    }
+    to {
+        border-bottom: 4px solid rgb(62, 62, 75);
+    }
+}

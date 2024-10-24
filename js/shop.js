@@ -9,7 +9,7 @@ function checkCosts() { // красная цена в магазие
 
     goldCost = parseInt(goldCost.match(/\d+/))
     platCost = parseInt(platCost.match(/\d+/))
-    donutCost = parseInt(donutCost.match(/\d+/))
+    donutCost = parseInt(donutCost.match(/\d+/));
 
 if (balanceLocalStorage >= Number(goldCost)) {
     document.getElementById('goldCost').style.color = 'white';
